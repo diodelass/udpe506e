@@ -1,9 +1,11 @@
 use std::net::UdpSocket;
 
 fn main() {
+	
+	let socket = UdpSocket::bind("[::]:0").expect("failed to bind to local address");
+
 	// send to everyone in the ipv4 address range. 
 	// takes an absolute minimum of about 6 hours with a gigabit connection and an arbitrarily fast computer.
-	let socket = UdpSocket::bind("[::]:0").expect("failed to bind to local address");
 	for w in 0..256 {
 	for x in 0..256 {
 	for y in 0..256 {
