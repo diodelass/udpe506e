@@ -1,7 +1,7 @@
 # udpe506e  
 
 ### say what?
-- sends one UDP packet containing 508 `e`s to every address on the internet.
+- sends one UDP packet containing 508 `e` to every address on the internet.
 - eeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeee
 - uses port 101 (ASCII ordinal of `e`)
 - I recommend you don't run it
@@ -20,8 +20,14 @@ around a while, like Amazon or Google.
 
 ### how many e will this program send out in total?
 if allowed to run until it stops, it will have transmitted precisely 
-172863442395836739439394300577520094806016 `e`s, or roughly 1.7 trillion trillion quadrillion of them.  
+172863442395836739439394300577520094806016 `e`, or roughly 1.7 trillion trillion quadrillion of them.  
 one teraterapeta-e, if you will.  
+The actual number of `e` received by the destinations will of course be far less, because UDP does not 
+make any guarantees about delivery. also, the vast majority of IPv6 addresses are unused. one could
+sit here and look through the statistics to find a number of `e` expected to ultimately reach their 
+destination, but that sounds like a lot of work, and given the scale of the amount of data sent by this
+program if it is allowed to finish, it seems unlikely that current statistics about the internet would
+even be relevant anyway.
 
 ### will you help me make a distributed version of this that I can run on a botnet I control?
 no.
