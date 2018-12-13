@@ -20,8 +20,8 @@ around a while, like Amazon or Google.
 
 ### how many e will this program send out in total?
 if allowed to run until it stops, it will have transmitted precisely 
-172863442395836739439394300577520094806016 `e`s, or roughly 1.7 trillion trillion quadrillion bytes.
-one teraterapetabyte, if you will.  
+172863442395836739439394300577520094806016 `e`s, or roughly 1.7 trillion trillion quadrillion of them.  
+one teraterapeta-e, if you will.  
 
 ### will you help me make a distributed version of this that I can run on a botnet I control?
 no.
