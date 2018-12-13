@@ -34,7 +34,7 @@ even be relevant anyway.
 ### Will you help me make a distributed version of this that I can run on a botnet I control?
 No.
 
-### Isn't this basically a DDoS attack? You shouldn't be hosting evil software here!
+### Isn't this basically a DDoS attack? You shouldn't be using GitHub to host evil software!
 What? No.  
 This is the opposite of DDoS attack. An effective DDoS involves many computers all sending data to a 
 small number of target computers, overwhelming the target with a large volume of requests. This program
