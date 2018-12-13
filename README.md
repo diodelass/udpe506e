@@ -10,7 +10,7 @@ the internet.
 - Comes with a 32-bit x86 linux binary, because I forgot to add that to the `.gitignore`
 - R.I.P [e30e/e98e](https://linuxwit.ch/blog/2018/12/e98e/)
 
-### how do I build it?
+### How do I build it?
 Please don't.  
 (Use rustc)
 
