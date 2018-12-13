@@ -20,8 +20,8 @@ around a while, like Amazon or Google.
 
 ### how many e will this program send out in total?
 if allowed to run until it stops, it will have transmitted precisely 
-172863442395836739439394300577520094806016 `e`, or roughly 1.7 trillion trillion quadrillion of them.  
-one teraterapeta-e, if you will.  
+172,863,442,395,836,739,439,394,300,577,520,094,806,016 `e`, or roughly 1.7 trillion trillion quadrillion 
+of them. one teraterapeta-e, if you will.  
 The actual number of `e` received by the destinations will of course be far less, because UDP does not 
 make any guarantees about delivery. also, the vast majority of IPv6 addresses are unused. one could
 sit here and look through the statistics to find a number of `e` expected to ultimately reach their 
