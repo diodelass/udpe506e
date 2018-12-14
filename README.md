@@ -11,8 +11,7 @@ address on the internet.
 - R.I.P [e30e/e98e](https://linuxwit.ch/blog/2018/12/e98e/)
 
 ### How do I build it?
-Please don't.  
-(Use rustc)
+Use `rustc`.
 
 ### It seems slow. How long should it take to run?
 Sending packets to all of IPv4 should take about 6 hours with a fast computer on a gigabit connection.  
@@ -30,7 +29,7 @@ make any guarantees about delivery. Also, the vast majority of IPv6 addresses ar
 sit here and look through the statistics to find a number of `e` expected to ultimately reach their 
 destination, but that sounds like a lot of work, and given the scale of the amount of data sent by this
 program if it is allowed to finish, it seems unlikely that current statistics about the internet would
-even be relevant anyway.
+even be relevant anyway.  
 
 ### Will this actually reach every device connected to the internet?
 No. This program will attempt to send one UDP packet to every IPv4 and IPv6 address. The specific devices
@@ -39,10 +38,10 @@ be delivered to devices that have a global IP address, which doesn't include the
 devices.  
   
 More pragmatically speaking, this program will not result in packets being sent to more than a handful
-of devices, because you won't run it for long enough to iterate over the majority of the address space.
+of devices, because you won't run it for long enough to iterate over the majority of the address space.  
 
 ### Will you help me make a distributed version of this that I can run on a botnet I control?
-No.
+No.  
 
 ### Isn't this basically a DDoS attack? You shouldn't be using GitHub to host evil software!
 What? No.  
@@ -66,7 +65,7 @@ than this program does, and yet it still remains almost unnoticed.
 Meanwhile, your computer - the one running this program - will have one of its processor threads loaded
 for septillions of years (or until you interrupt it), during which it will also be transmitting a huge 
 amount of data that might very well saturate its network upload bandwidth. I suppose you could think of 
-this as a "DoS attack" of sorts, but it's not distributed, and the only victim is yourself.
+this as a "DoS attack" of sorts, but it's not distributed, and the only victim is yourself.  
 
 ### Won't someone out there be annoyed if anyone runs this, though?
 Perhaps so!  
@@ -91,16 +90,28 @@ inadvertently uncover a conspiracy that will topple the American tech economy.
 It's a big world out there! I have no idea how a given computer will react to being sent a packet full of 
 `e`. However, the conventions of networking say that a typical computer receiving an unsolicited,
 nonsensical packet out of nowhere will probably just ignore it. Furthermore, if anything does react badly
-to being sent a nonsense packet, it probably won't be my fault.
+to being sent a nonsense packet, it probably won't be my fault.  
 
 ### This page messes with GitHub's web UI! Will you please reduce the number of e?
-No. 
+No.  
+
+### Why are you doing this whole super-defensive preemptive FAQ thing? Are you expecting backlash?
+Well, maybe.  
+The original 
+[e98e](https://github.com/eeeeeeeeeeeeeeeeeeeeeeeeeeeeeeee/eeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeee),
+upon which this is based, got a ton of absurd angry issues opened by people who felt like they needed to 
+understand it. Rather than wait for someone to drop in and demand to know what the hell I'm on about, since
+it seems like there's a nonzero chance of that, I figured I'd just say up front what I would otherwise say
+in response, and save everyone the time.  
+Also, I think preemptive FAQs are kind of funny and amusing.  
 
 ### Okay, be level with me. What is this really about?
 This is a piece of art with Dadaist inclinations, made very much in the spirit of the original
 [e98e](https://github.com/eeeeeeeeeeeeeeeeeeeeeeeeeeeeeeee/eeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeee),
-and originally intended as a pull request for that project before it was archived. It's not meant to be 
-understood, or to do anything useful, or to make you like me more, or anything. It needs no purpose, and 
-it simply is.  
+and originally intended as a pull request for that project before it was archived. It's not meant to make
+a point about anything, or test GitHub for any particular flaw, or do anything useful, or make you like me 
+more, or even be understood at all. It needs no purpose, and it simply is.  
+If you find it funny, that's great. But if you don't, then I don't care why. That's not what `udpe506e` is 
+about.  
   
 I promise it won't hurt you.
