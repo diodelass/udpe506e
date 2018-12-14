@@ -43,7 +43,7 @@ packet. Since most servers probably won't expect it, their software will just fi
 on as normal. It will be like a single-port port scan, except even less invasive, because most servers
 will not have anything listening on UDP port 101 (HOSTNAME uses port 101, but I believe this is TCP only),
 and the packet will simply be rejected without a reply.  
-Meanwhile, your computer - the one running this program - will have one of its processor threads tied up
-for up to 10 septillion years, during which it will also be transmitting a huge amount of data that might
-very well saturate its network upload bandwidth. I suppose you could think of this as a "DoS attack" of 
-sorts, but it's not distributed, and the only victim is yourself.
+Meanwhile, your computer - the one running this program - will have one of its processor threads loaded
+for septillions of years (or until you interrupt it), during which it will also be transmitting a huge 
+amount of data that might very well saturate its network upload bandwidth. I suppose you could think of 
+this as a "DoS attack" of sorts, but it's not distributed, and the only victim is yourself.
