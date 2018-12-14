@@ -58,9 +58,10 @@ can be imagined.
   
 If you're still unconvinced, know that there are worms out there, such as 
 [Linux.Muldrop.14](https://vms.drweb.com/virus/?_is=1&i=15389228), that constantly scan the IPv4 address
-range for computers with SSH servers, and upon finding one, tries to log in with the default username
-and password of the Raspberry Pi. This happens constantly and consumes far more processing time on target
-machines than this program does, and yet it still remains almost unnoticed.
+range for computers with SSH servers, and upon finding one, try to log in with a bunch of common/default
+usernames and passwords. (If you run a Linux server, you may have noticed the logs of these attempts piling
+up in `lastb`.) This happens constantly and consumes far more processing time on target machines 
+than this program does, and yet it still remains almost unnoticed.
   
 Meanwhile, your computer - the one running this program - will have one of its processor threads loaded
 for septillions of years (or until you interrupt it), during which it will also be transmitting a huge 
