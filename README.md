@@ -48,12 +48,19 @@ No.
 What? No.  
   
 This is the opposite of DDoS attack. An effective DDoS involves many computers all sending data to a 
-small number of target computers, overwhelming the target with a large volume of requests. This program
-sends a single packet to each address on the internet, meaning that each server will receive about one
-packet. Since most servers probably won't expect it, their software will just filter it out, and continue
-on as normal. It will be like a single-port port scan, except even less invasive, because most servers
-will not have anything listening on UDP port 101 (HOSTNAME uses port 101, but I believe this is TCP only),
-and the packet will simply be rejected without a reply.  
+small number of target computers, overwhelming the target with a large volume of requests that consume 
+resources to process. This program sends a single packet to each address on the internet, meaning that 
+each server will receive about one packet. Since most servers probably won't expect it - and probably 
+won't even run any services that listen on UDP port 101 at all - their software won't waste any time 
+processing it. Given this, and the fact that the expected minimum time between packets for a 
+randomly-selected IPv4 address is about three hours, this program is about as far from a DDoS script as 
+can be imagined.  
+  
+If you're still unconvinced, know that there are worms out there, such as 
+[Linux.Muldrop.14](https://vms.drweb.com/virus/?_is=1&i=15389228), that constantly scan the IPv4 address
+range for computers with SSH servers, and upon finding one, tries to log in with the default username
+and password of the Raspberry Pi. This happens constantly and consumes far more processing time on target
+machines than this program does, and yet it still remains almost unnoticed.
   
 Meanwhile, your computer - the one running this program - will have one of its processor threads loaded
 for septillions of years (or until you interrupt it), during which it will also be transmitting a huge 
