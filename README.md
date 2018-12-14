@@ -1,8 +1,8 @@
 # udpe506e  
 
 ### Say what?
-- Sends one UDP packet containing 508 `e` - the maximum safe UDP payload size - to every address on 
-the internet.
+- A program that sends one UDP packet containing 508 `e` - the maximum safe UDP payload size - to every 
+address on the internet.
 - eeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeee
 - Uses port 101 (ASCII ordinal of `e`)
 - I recommend you don't run it
@@ -31,6 +31,14 @@ destination, but that sounds like a lot of work, and given the scale of the amou
 program if it is allowed to finish, it seems unlikely that current statistics about the internet would
 even be relevant anyway.
 
+### Will this actually reach every device connected to the internet?
+No. This program will attempt to send one UDP packet to every IPv4 and IPv6 address. The specific devices
+this includes will vary depending on your local network, but generally speaking, its messages will only
+be delivered to devices that have a global IP address, which doesn't include the majority of personal
+devices.  
+More pragmatically speaking, this program will not result in packets being sent to more than a handful
+of devices, because you won't run it for long enough to iterate over the majority of the address space.
+
 ### Will you help me make a distributed version of this that I can run on a botnet I control?
 No.
 
@@ -47,3 +55,26 @@ Meanwhile, your computer - the one running this program - will have one of its p
 for septillions of years (or until you interrupt it), during which it will also be transmitting a huge 
 amount of data that might very well saturate its network upload bandwidth. I suppose you could think of 
 this as a "DoS attack" of sorts, but it's not distributed, and the only victim is yourself.
+
+### Won't someone out there be annoyed if anyone runs this, though?
+Perhaps so!  
+Perhaps someone is running a weird experimental UDP service on their public server at port 101, which just 
+happens to have a weird buffer overflow vulnerability that makes it crash when it receives a packet 
+containing 508 `e`s.  
+Perhaps Udp Georg, who lives in a cave and subsists only by eating stray UDP packets, will receive such a
+windfall of nutrition from this packet full of `e` that he will break out of his cave and rampage across
+the countryside, doing millions of dollars in damage before he finally slips on a banana peel and falls 
+into another cave.
+Perhaps some server belonging to the Russian government has an ultra-sensitive IDS watching its UDP ports 
+for that evil American nonsense, and the KGB will be dispatched to take you out as soon as this program 
+crosses into Russian address space.  
+Perhaps Cabbage OS, the latest secret Apple prototype for their upcoming IoT line, uses port 101 for its 
+covert spy system that receives instructions from Apple HQ, and by sending this packet, you will 
+inadvertently uncover a conspiracy that will topple the American tech economy.  
+It's a big world out there! I have no idea how a given computer will react to being sent a packet full of 
+`e`. However, the conventions of networking say that a typical computer receiving an unsolicited,
+nonsensical packet out of nowhere will probably just ignore it. Furthermore, if anything does react badly
+to being sent a nonsense packet, it's probably not my fault.
+
+### This page messes with GitHub's web UI! Will you please reduce the number of e?
+No. 
