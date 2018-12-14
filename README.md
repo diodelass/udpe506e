@@ -90,8 +90,9 @@ No.
 
 ### Okay, be level with me. What is this really about?
 This is a piece of art with Dadaist inclinations, made very much in the spirit of the original
-[e98e](https://github.com/eeeeeeeeeeeeeeeeeeeeeeeeeeeeeeee/eeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeee).
-It's not meant to be understood, or to do anything useful, or to make you like me more, or anything. It
-needs no purpose, and simply is.  
+[e98e](https://github.com/eeeeeeeeeeeeeeeeeeeeeeeeeeeeeeee/eeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeee),
+and originally intended as a pull request for that project before it was archived. It's not meant to be 
+understood, or to do anything useful, or to make you like me more, or anything. It needs no purpose, and 
+it simply is.  
   
 I promise it won't hurt you.
