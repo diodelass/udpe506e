@@ -34,11 +34,12 @@ even be relevant anyway.
 ### Will this actually reach every device connected to the internet?
 No. This program will attempt to send one UDP packet to every IPv4 and IPv6 address. The specific devices
 this includes will vary depending on your local network, but generally speaking, its messages will only
-be delivered to devices that have a global IP address, which doesn't include the majority of personal
-devices.  
+be delivered to devices that have a global IP address, which, thanks to the poor adoption of IPv6, does
+not include many personal devices. 
   
-More pragmatically speaking, this program will not result in packets being sent to more than a handful
-of devices, because you won't run it for long enough to iterate over the majority of the address space.  
+If this were an ideal world in which every network used IPv6 and UDP packets were always delivered without 
+a single drop, then every device on the internet worldwide would receive one spurious packet as a result of
+this program being run to completion. But we don't live in that world.
 
 ### Will you help me make a distributed version of this that I can run on a botnet I control?
 No.  
